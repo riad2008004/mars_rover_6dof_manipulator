@@ -1,10 +1,33 @@
 # mars_rover_6dof_manipulator
 
-Arm Base : Right PWM
+#CONNECTION DIAGRAM
 
-  {13, 12}, // Motor 1: LPWM, RPWM
-  {11, 10}, // Motor 2 
-  {9, 8},   // Motor 3
-  {7, 6},   // Motor 4
-  {5, 4},   // Motor 5
-  {3, 2}    // Motor 6
+BASE LPWM = 11
+BASE RPWM = 10
+ACTUATOR 1 LPWM = 3
+ACTUATOR 1 RPWM = 2
+ACTUATOR 2 LPWM = 9
+ACTUATOR 2 RPWM = 8
+WRIST LPWM = 7
+WRIST RPWM = 6
+360ROTATION LPWM = 13
+360ROTATION RPWM = 12
+GRIPPER LPWM = 5
+GRIPPER RPWM = 4
+
+#CHANGE SPEED IN SPEED INIT
+#CHANGE PINOUT IN PINCONFIG
+
+#COMMANDS
+BASE&RIGHT&<speed>  
+BASE&LEFT&<speed>  
+ACTUATOR1&UP&<speed>  
+ACTUATOR1&DOWN&<speed>  
+ACTUATOR2&UP&<speed>  
+ACTUATOR2&DOWN&<speed>  
+WRIST&UP&<speed>  
+WRIST&DOWN&<speed>  
+ROTATION&CLOCK&<speed>  
+ROTATION&ANTI&<speed>  
+GRIPPER&EXTRACT&<speed> 
+GRIPPER&RETRACT&<speed>
