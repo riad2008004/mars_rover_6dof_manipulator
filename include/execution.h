@@ -23,4 +23,6 @@ void rotation_anticlockwise(int speed);
 void gripper_extract(int speed);
 void gripper_retract(int speed);
 
+void stop();
+
 #endif

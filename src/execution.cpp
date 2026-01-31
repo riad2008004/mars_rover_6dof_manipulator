@@ -146,3 +146,10 @@ void gripper_retract(int temp_speed)
     analogWrite(GRIPPER_RETRACT, speed);
     analogWrite(GRIPPER_EXTRACT, 0);
 }
+void stop()
+{
+    for (int i = 1; i <= 13; i++)
+    {
+        analogWrite(i, 0);
+    }
+}

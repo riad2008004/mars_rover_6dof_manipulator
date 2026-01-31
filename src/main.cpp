@@ -3,6 +3,8 @@
 #include "pinconfig.h"
 #include "execution.h"
 
+#define TOKEN_EXECUTION_TIME 200
+
 void setup()
 {
   Serial.begin(9600);
@@ -17,6 +19,7 @@ void loop()
     String token = Serial.readStringUntil('\n');
     token.trim();
     execute_command(token);
-    delay(50);
+    delay(TOKEN_EXECUTION_TIME);
+    low_initial_shutdown();
   }
 }

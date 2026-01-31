@@ -16,7 +16,7 @@ const int GRIPPER_SPEED_LOW = 50;
 
 void arm_pin_config()
 {
-    for (int i = 1; i <= 6; i++)
+    for (int i = 1; i <= 13; i++)
     {
         pinMode(i, OUTPUT);
     }
@@ -24,7 +24,7 @@ void arm_pin_config()
 
 void low_initial_shutdown()
 {
-    for (int i = 1; i <= 6; i++)
+    for (int i = 1; i <= 13; i++)
     {
         digitalWrite(i, LOW);
     }

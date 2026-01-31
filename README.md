@@ -28,6 +28,6 @@ ACTUATOR2&DOWN&<speed>
 WRIST&UP&<speed>  
 WRIST&DOWN&<speed>  
 ROTATION&CLOCK&<speed>  
-ROTATION&ANTI&<speed>  
+ROTATION&ANTI&<speed> 
 GRIPPER&EXTRACT&<speed> 
 GRIPPER&RETRACT&<speed>
